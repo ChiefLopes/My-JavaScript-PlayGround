@@ -1,2 +1,2 @@
-# My-javaScript-PalyGround
+# My-javaScript-PlayGround
 For freestyle Javascript codes
