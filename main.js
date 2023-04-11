@@ -13,3 +13,30 @@ textSpace.textContent = myStr; // inserted myStr into the textSpace
 const trial = `i am "a double quote" and I am a "single quote"`;
 console.log(trial);
 
+const goodStr = 'Jake asks Finn, "Hey, let\'s go on an adventure?"'; 
+// const badStr = 'Finn responds, "Let's go!"';
+console.log(goodStr);
+
+/**
+ * In the goodStr above, you can use both quotes safely by using the backslash \ as an escape character.
+Note: The backslash \ should not be confused with the forward slash /. They do not do the same thing.
+ */
+
+
+/**
+// ! * Escape Sequences in Strings
+Quotes are not the only characters that can be escaped inside a string. Escape sequences allow you to use characters you may not otherwise be able to use in a string.
+
+Code	Output
+\'	single quote
+\"	double quote
+\\	backslash
+\n	newline
+\t	tab
+\r	carriage return
+\b	word boundary
+\f	form feed
+ */
+
+const escapeSequence = "FirstLine\n\t\SecondLine\n\tThirdLine";
+console.log(escapeSequence);
