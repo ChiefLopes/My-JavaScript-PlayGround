@@ -80,4 +80,9 @@ appendStr += anAdjective;
 console.log(appendStr);
 
 
-
+/**
+ * Find the Length of a String
+You can find the length of a String value by writing .length after the string variable or string literal.
+*/
+console.log("Alan Peter".length); // this is equals to 10 becaus the strings there are 10 characters
+ 
