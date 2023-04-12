@@ -38,5 +38,44 @@ Code	Output
 \f	form feed
  */
 
-const escapeSequence = "FirstLine\n\t\SecondLine\n\tThirdLine";
-console.log(escapeSequence);
+const escapeSequence = "FirstLine\n\t\SecondLine\n\tThirdLine"; console.log(escapeSequence);
+
+
+/**
+ *! Concatenating Strings with Plus Operator in Javascript
+In JavaScript, when the + operator is used with a String value,it is called the concatenation operator. 
+You can build a new string out of other strings by concatenating them together.
+ */
+
+/**
+ *! Example: */
+const ourStr = "I come first. " + "I come second."; console.log(ourStr);
+/*The string 
+~~~~~~~ "I come first. I come second." ~~~~
+would be displayed in the console.
+ */
+
+/**
+ * !Concatenating Strings with the Plus Equals Operator
+We can also use the += operator to concatenate a string onto the end of an existing string variable. This can be very helpful to break a long string over several lines.
+
+Note: Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+*!Example: */
+
+ let conStr = "This is the first line. ";
+ conStr += "This is the second line.";  console.log(conStr);
+/* conStr now has a value of the string "I come first. I come second..""
+ */
+
+/**
+ *! Appending Variables to Strings
+ * Just as we can build a string over multiple lines out of string literals, we can also append variables to a string using the plus equals (+=) operator.
+
+Example:
+
+const anAdjective = "awesome!";
+let ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+ */
+
