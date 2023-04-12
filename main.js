@@ -87,7 +87,7 @@ You can find the length of a String value by writing .length after the string va
 console.log("Alan Peter".length); // this is equals to 10 becaus the strings there are 10 characters
  
 /**
- * Use Bracket Notation to Find the First Character in a String
+ * !Use Bracket Notation to Find the First Character in a String
 Bracket notation is a way to get a character at a specific index within a string.
 
 Most modern programming languages, like JavaScript, don't start counting at 1 like humans do. They start at 0. This is referred to as Zero-based indexing.
@@ -98,5 +98,19 @@ For example, the character at index 0 in the word Charles is C. So if const firs
 
 const firstName = "Charles";
 const firstLetter = firstName[0];
-console.log(firstLetter[0]); // firstLetter would have a value of the string C.   
+const fifthLetter = firstName[6]; // finding the 5th letter
+console.log(firstLetter, fifthLetter); // firstLetter would have a value of the string C. 
+ 
 
+/**
+ * Understand String Immutability
+In JavaScript, String values are immutable, which means that they cannot be altered once created.
+
+For example, the following code will produce an error because the letter B in the string Bob cannot be changed to the letter J:
+ */
+let thisStr = "Bob";
+myStr[0] = "J";
+// Note that this does not mean that myStr could not be re-assigned. The only way to change myStr would be to assign it with a new value, like this:
+
+let thisStr2 = "Bob";
+thisStr2 = "Job";
