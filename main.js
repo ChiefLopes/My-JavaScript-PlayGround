@@ -103,7 +103,7 @@ console.log(firstLetter, fifthLetter); // firstLetter would have a value of the 
  
 
 /**
- * Understand String Immutability
+ *! Understand String Immutability
 In JavaScript, String values are immutable, which means that they cannot be altered once created.
 
 For example, the following code will produce an error because the letter B in the string Bob cannot be changed to the letter J:
@@ -114,3 +114,17 @@ myStr[0] = "J";
 
 let thisStr2 = "Bob";
 thisStr2 = "Job";
+
+
+/**
+ *! Use Bracket Notation to Find the Nth Character in a String
+You can also use bracket notation to get the character at other positions within a string.
+
+Remember that computers start counting at 0, so the first character is actually the zeroth character.
+
+Example: */
+
+const theName = "Ada";
+const secondLetterOftheName = theName[1];
+console.log(secondLetterOftheName);// secondLetterOfFirstName would have a value of the string {d}.
+ 
