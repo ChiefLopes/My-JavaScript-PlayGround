@@ -98,7 +98,7 @@ For example, the character at index 0 in the word Charles is C. So if const firs
 
 const firstName = "Charles";
 const firstLetter = firstName[0];
-const fifthLetter = firstName[6]; // finding the 5th letter
+const fifthLetter = firstName[4]; // finding the 5th letter
 console.log(firstLetter, fifthLetter); // firstLetter would have a value of the string C. 
  
 
@@ -127,4 +127,21 @@ Example: */
 const theName = "Ada";
 const secondLetterOftheName = theName[1];
 console.log(secondLetterOftheName);// secondLetterOfFirstName would have a value of the string {d}.
+const lastCharOftheName = theName[theName.length - 1];
+console.log(lastCharOftheName);
+
+/**
+ * Use Bracket Notation to Find the Last Character in a String
+In order to get the last letter of a string, you can subtract one from the string's length.
+
+For example, if const firstName = "Ada", you can get the value of the last letter of the string by using firstName[firstName.length - 1].
+
+Example:  */
+
+const firstName1 = "Ada";
+const lastLetter = firstName[firstName.length - 1];
+// lastLetter would have a value of the string a.
+
+
+
  
