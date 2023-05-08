@@ -37,7 +37,7 @@ There are different ways to create new objects:
 Create a single object, using an object literal.
 Create a single object, with the keyword new.
 Define an object constructor, and then create objects of the constructed type.
-Create an object using Object.create().
+Create an object using Object.create(). 
  */
 const person = {
   name: "Max",

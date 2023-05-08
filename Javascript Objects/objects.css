@@ -1,23 +1,35 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-     background-color: bisque;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: bisque;
 }
 
-.container{
-   margin: 10px;
+.container {
+  margin: 10px;
 }
 
 header {
-    font-size: 30px; 
-    font-weight: 800; 
-    color: green; 
-    text-transform: uppercase;
-    margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: 800;
+  color: green;
+  text-transform: uppercase;
+  margin-bottom: 5px;
 }
 
 .def {
-   margin: 10px;
-   font-size: 17px;
+  margin: 10px;
+  font-size: 17px;
+}
+
+.note {
+  color: rgb(18, 94, 52);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.createObj ul li {
+  font-size: 17px;
+  list-style-type: decimal;
+  font-weight: 700;
+  list-style-position: inside;
 }
