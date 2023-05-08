@@ -27,6 +27,17 @@ Every piece of data is stored in its file by the key. It’s easy to find a file
 >>> Functions are always objects
 >>> Objects are always objects
 All JavaScript values, except primitives, are objects.
+
+
+Creating a JavaScript Object
+With JavaScript, you can define and create your own objects.
+
+There are different ways to create new objects:
+
+Create a single object, using an object literal.
+Create a single object, with the keyword new.
+Define an object constructor, and then create objects of the constructed type.
+Create an object using Object.create().
  */
 const person = {
   name: "Max",

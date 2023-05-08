@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     background-color: bisque;
+}
+
+.container{
+   margin: 10px;
+}
+
+header {
+    font-size: 30px; 
+    font-weight: 800; 
+    color: green; 
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.def {
+   margin: 10px;
+   font-size: 17px;
+}
