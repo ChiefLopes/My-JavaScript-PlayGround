@@ -105,3 +105,6 @@ const nameKey = "Name";
 console.log(myProfile[nameKey]);
 console.log(myProfile["first" + nameKey]);
 console.log(myProfile["last" + nameKey]);
+
+const askMe = prompt("what do you want to know about Lopes? firstName, lastName, skin, age, origin, friends or job")
+console.log(myProfile[askMe]);
