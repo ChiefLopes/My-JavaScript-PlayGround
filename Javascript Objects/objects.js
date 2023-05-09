@@ -108,3 +108,9 @@ console.log(myProfile["last" + nameKey]);
 
 const askMe = prompt("what do you want to know about Lopes? firstName, lastName, skin, age, origin, friends or job")
 console.log(myProfile[askMe]);
+
+if (myProfile[askMe]) {
+   console.log(myProfile[askMe]); 
+} else {
+  console.log("wrong request!" + askMe);
+}
