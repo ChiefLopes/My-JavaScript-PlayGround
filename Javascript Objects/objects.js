@@ -100,5 +100,8 @@ const myProfile = {
   friends: ["Mecky", "Hero", "Joseph", "Marcus"]
 }
 
-console.log(myProfile["firstName" ]);
-// console.log(myProfile);
+
+const nameKey = "Name";
+console.log(myProfile[nameKey]);
+console.log(myProfile["first" + nameKey]);
+console.log(myProfile["last" + nameKey]);
