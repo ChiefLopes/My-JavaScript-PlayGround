@@ -75,6 +75,16 @@ owo.name // this will display the name "Max"
 owo["name"]  
 
 //! Looping through the properties of an object:
-for (i in person) {
-  console.log(i);
-}
+/* Using the Object.keys() methid
+ * The Object.keys() method was introduced in ES6. It takes the object we want to loop over 
+ * as an argument and returns an array containing all property names (also known as keys).
+ */
+let props = Object.values(person);
+console.log(props);
+
+props.forEach((props) => {
+  console.log(`There are 3 ${person[props]} ${props}`);
+})
+
+props.forEach((props) => console.log(props));
+console.log(props);
