@@ -39,6 +39,8 @@ Create a single object, with the keyword new.
 Define an object constructor, and then create objects of the constructed type.
 Create an object using Object.create(). 
  */
+
+// 1. Creaing Objects using the object Literal
 const person = {
   name: "Max",
   age: "20yrs",
@@ -46,6 +48,33 @@ const person = {
   Nationality: "Nigerian",
 };
 
+// Creating objects using the new keyword
+const owo = new Object();
+owo.name = "Max";
+owo.age = "20yrs";
+owo.class = "mid";
+owo.Nationality = "Nigerian";
+
+// Creating objects using the 
+
+console.log(owo.name);
+console.log();
 // const x = person;
 // x.name = "ben"
-console.log(person["name"]);
+
+// To remove a property, we can use the delete operator:
+delete person.age   
+console.log(person);
+
+
+//! Accessing JavaScript Properties
+//* 1. Objects can be accessed using the dot notation...
+owo.name // this will display the name "Max"
+
+//* 2. Ojects can be accessed using bracket notation. In this method, the properties are written as strings.
+owo["name"]  
+
+//! Looping through the properties of an object:
+for (i in person) {
+  console.log(i);
+}
