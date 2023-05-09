@@ -88,3 +88,16 @@ props.forEach((props) => {
 
 props.forEach((props) => console.log(props));
 console.log(props);
+
+// Looking again at objects
+const myProfile = {
+  firstName: "Louis",
+  lastName: "Peace",
+  job: "web dev",
+  skin: "dark",
+  origin: "Annang",
+  age: 2023 - 2000,
+  friends: ["Mecky", "Hero", "Joseph", "Marcus"]
+}
+
+console.log(myProfile);
