@@ -1,4 +1,4 @@
-export const countries = {
+const countries = {
     Asia: "China",
     Africa: "Nigeria",
     America: "The USA",

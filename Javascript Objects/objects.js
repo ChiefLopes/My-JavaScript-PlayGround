@@ -109,19 +109,23 @@ myProfile.location = "Uyo";
 myProfile["twitter"] = "@Chieflopes";
 
 
-const askMe = prompt(
-  "what do you want to know about Lopes? firstName, lastName, skin, age, origin, location friends or job"
-);
-console.log(myProfile[askMe]);
+// const askMe = prompt(
+//   "what do you want to know about Lopes? firstName, lastName, skin, age, origin, location friends or job"
+// );
+// console.log(myProfile[askMe]);
 
 
 
-if (myProfile[askMe]) {
-  console.log(myProfile[askMe]);
-} else {
-  console.log(prompt("wrong!" + prompt(
-  "what do you want to know about Lopes? firstName, lastName, skin, age, origin, location friends or job"
-)));
-}
+// if (myProfile[askMe]) {
+//   console.log(myProfile[askMe]);
+// } else {
+//   console.log(prompt("wrong!" + prompt(
+//   "what do you want to know about Lopes? firstName, lastName, skin, age, origin, location friends or job"
+// )));
+// }
+
+console.log(`${myProfile.firstName} has ${myProfile.friends.length} friends and his girlfriend's is 
+${myProfile.friends[0]}. ${myProfile.friends[1]} is his best friend in the church while ${myProfile.friends[2]} is his coding paddy and ${myProfile.friends[3]} is his street paddy`);
+
 
 
