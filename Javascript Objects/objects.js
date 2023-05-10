@@ -1,3 +1,4 @@
+
 // ! javascript Objects...
 
 /** 
@@ -55,7 +56,7 @@ owo.age = "20yrs";
 owo.class = "mid";
 owo.Nationality = "Nigerian";
 
-// Creating objects using the 
+// Creating objects using the
 
 console.log(owo.name);
 console.log();
@@ -63,20 +64,19 @@ console.log();
 // x.name = "ben"
 
 // To remove a property, we can use the delete operator:
-delete person.age   
+delete person.age;
 console.log(person);
-
 
 //! Accessing JavaScript Properties
 //* 1. Objects can be accessed using the dot notation...
-owo.name // this will display the name "Max"
+owo.name; // this will display the name "Max"
 
 //* 2. Ojects can be accessed using bracket notation. In this method, the properties are written as strings.
-owo["name"]  
+owo["name"];
 
 //! Looping through the properties of an object:
 /* Using the Object.keys() methid
- * The Object.keys() method was introduced in ES6. It takes the object we want to loop over 
+ * The Object.keys() method was introduced in ES6. It takes the object we want to loop over
  * as an argument and returns an array containing all property names (also known as keys).
  */
 let props = Object.values(person);
@@ -84,7 +84,7 @@ console.log(props);
 
 props.forEach((props) => {
   console.log(`There are 3 ${person[props]} ${props}`);
-})
+});
 
 props.forEach((props) => console.log(props));
 console.log(props);
@@ -97,20 +97,31 @@ const myProfile = {
   skin: "dark",
   origin: "Annang",
   age: 2023 - 2000,
-  friends: ["Mecky", "Hero", "Joseph", "Marcus"]
-}
-
+  friends: ["Mecky", "Hero", "Joseph", "Marcus"],
+};
 
 const nameKey = "Name";
 console.log(myProfile[nameKey]);
 console.log(myProfile["first" + nameKey]);
 console.log(myProfile["last" + nameKey]);
 
-const askMe = prompt("what do you want to know about Lopes? firstName, lastName, skin, age, origin, friends or job")
+myProfile.location = "Uyo";
+myProfile["twitter"] = "@Chieflopes";
+
+
+const askMe = prompt(
+  "what do you want to know about Lopes? firstName, lastName, skin, age, origin, location friends or job"
+);
 console.log(myProfile[askMe]);
 
+
+
 if (myProfile[askMe]) {
-   console.log(myProfile[askMe]); 
+  console.log(myProfile[askMe]);
 } else {
-  console.log("wrong request!" + askMe);
+  console.log(prompt("wrong!" + prompt(
+  "what do you want to know about Lopes? firstName, lastName, skin, age, origin, location friends or job"
+)));
 }
+
+
