@@ -127,5 +127,4 @@ myProfile["twitter"] = "@Chieflopes";
 console.log(`${myProfile.firstName} has ${myProfile.friends.length} friends and his girlfriend's is 
 ${myProfile.friends[0]}. ${myProfile.friends[1]} is his best friend in the church while ${myProfile.friends[2]} is his coding paddy and ${myProfile.friends[3]} is his street paddy`);
 
-
-
+//! OBJECT METHODS
