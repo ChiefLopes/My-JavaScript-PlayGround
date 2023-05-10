@@ -128,3 +128,12 @@ console.log(`${myProfile.firstName} has ${myProfile.friends.length} friends and 
 ${myProfile.friends[0]}. ${myProfile.friends[1]} is his best friend in the church while ${myProfile.friends[2]} is his coding paddy and ${myProfile.friends[3]} is his street paddy`);
 
 //! OBJECT METHODS
+  
+myProfile.birthyear = 2001;
+console.log(myProfile);
+
+myProfile.calcAge = (birthyear) => {
+  return 2023 - birthyear
+};
+
+console.log(myProfile.calcAge(2002))
