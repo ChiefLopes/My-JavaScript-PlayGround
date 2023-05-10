@@ -127,7 +127,8 @@ myProfile["twitter"] = "@Chieflopes";
 console.log(`${myProfile.firstName} has ${myProfile.friends.length} friends and his girlfriend's is 
 ${myProfile.friends[0]}. ${myProfile.friends[1]} is his best friend in the church while ${myProfile.friends[2]} is his coding paddy and ${myProfile.friends[3]} is his street paddy`);
 
-//! OBJECT METHODS
+//! OBJECT METHODS  
+//* A JavaScript method is simply a function declared inside an object...
   
 myProfile.birthyear = 2001;
 console.log(myProfile);
@@ -135,5 +136,6 @@ console.log(myProfile);
 myProfile.calcAge = (birthyear) => {
   return 2023 - birthyear
 };
+//? You can not use function declarations in a method. Only function expressions work.
 
 console.log(myProfile.calcAge(2002))
