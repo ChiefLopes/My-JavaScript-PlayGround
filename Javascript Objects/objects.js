@@ -113,7 +113,13 @@ const myProfile = {
   },
 
   getSummary: () => {
-   return `${myProfile.firstName} is a ${myProfile.calcAge()}-year old ${myProfile.job} and he ${myProfile.hasDriversLicense} `
+   return `${myProfile.firstName} is a ${myProfile.calcAge()}-year old ${
+     myProfile.job
+   } and he ${
+     myProfile.hasDriversLicense
+       ? "has a driver's license"
+       : "has no driver's license"
+   } `;
   }
 };
 
@@ -126,9 +132,9 @@ console.log(myProfile.calcAge());
 //   myProfile.hasDriversLicense = "has no driver's license";
 // }
 
-myProfile.hasDriversLicense = true
-  ? "has a driver's license"
-  : "has no driver's license";
+// myProfile.hasDriversLicense = true
+//   ? "has a driver's license"
+//   : "has no driver's license";
  
 console.log(
   myProfile.getSummary()
@@ -175,4 +181,6 @@ ${myProfile.friends[0]}. ${myProfile.friends[1]} is his best friend in the churc
 //   return 2023 - this.birthyear
 // };
 //**  You can not use function declarations in a method. Only function expressions work.   
+
+//!? Resolved a conflict by manually deleting got.lock file from my project directory.
 
