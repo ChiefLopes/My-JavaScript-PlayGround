@@ -96,22 +96,44 @@ const myProfile = {
   job: "web dev",
   skin: "dark",
   origin: "Annang",
-  age: 2023 - 2000,
+  age: 2023 - 2001,
   friends: ["Mecky", "Hero", "Joseph", "Marcus"],
-  birthYear: 2001,
+  birthYear: 2002,
+  hasDriversLicense: true,
+
+  // calcAge: function () {
+  //   console.log(this);
+  //     return 2023 - this.age
+  // }
 
   calcAge: function () {
-      return 2023 - this.birthYear
-  }
+    dateOfBirth = 2023 - this.birthYear;
+    return; dateOfBirth
+   
+    }
 };
 
 console.log(myProfile.calcAge());
+
+
+if (myProfile.hasDriversLicense == true) {
+  myProfile.hasDriversLicense = "has a driver's license"
+} else {
+  myProfile.hasDriversLicense = "has no driver's license";
+}
+ 
+console.log(
+  `${myProfile.firstName} is a ${myProfile.age}-year old ${myProfile.job} and he ${myProfile.hasDriversLicense} `
+);
+
+// console.log(myProfile.calcAge());
 // console.log(myProfile.calcAge);
 
 const nameKey = "Name";
-console.log(myProfile[nameKey]);
+
 console.log(myProfile["first" + nameKey]);
 console.log(myProfile["last" + nameKey]);
+
 
 myProfile.location = "Uyo";
 myProfile["twitter"] = "@Chieflopes";
