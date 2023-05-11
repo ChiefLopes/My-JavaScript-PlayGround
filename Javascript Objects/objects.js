@@ -99,7 +99,7 @@ const myProfile = {
   age: 2023 - 2001,
   friends: ["Mecky", "Hero", "Joseph", "Marcus"],
   birthYear: 2002,
-  hasDriversLicense: true,
+  hasDriversLicense: false,
 
   // calcAge: function () {
   //   console.log(this);
