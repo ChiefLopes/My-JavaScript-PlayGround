@@ -107,23 +107,31 @@ const myProfile = {
   // }
 
   calcAge: function () {
-    dateOfBirth = 2023 - this.birthYear;
-    return; dateOfBirth
-   
-    }
+    return (dateOfBirth = 2023 - this.birthYear);
+        ;
+
+  },
+
+  getSummary: () => {
+   return `${myProfile.firstName} is a ${myProfile.calcAge()}-year old ${myProfile.job} and he ${myProfile.hasDriversLicense} `
+  }
 };
 
 console.log(myProfile.calcAge());
 
 
-if (myProfile.hasDriversLicense == true) {
-  myProfile.hasDriversLicense = "has a driver's license"
-} else {
-  myProfile.hasDriversLicense = "has no driver's license";
-}
+// if (myProfile.hasDriversLicense == true) {
+//   myProfile.hasDriversLicense = "has a driver's license"
+// } else {
+//   myProfile.hasDriversLicense = "has no driver's license";
+// }
+
+myProfile.hasDriversLicense = true
+  ? "has a driver's license"
+  : "has no driver's license";
  
 console.log(
-  `${myProfile.firstName} is a ${myProfile.age}-year old ${myProfile.job} and he ${myProfile.hasDriversLicense} `
+  myProfile.getSummary()
 );
 
 // console.log(myProfile.calcAge());
