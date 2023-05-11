@@ -112,11 +112,11 @@ const myProfile = {
 
   },
 
-  getSummary: () => {
-   return `${myProfile.firstName} is a ${myProfile.calcAge()}-year old ${
-     myProfile.job
+  getSummary: function () {
+   return `${this.firstName} is a ${this.calcAge()}-year old ${
+     this.job
    } and he ${
-     myProfile.hasDriversLicense
+     this.hasDriversLicense
        ? "has a driver's license"
        : "has no driver's license"
    } `;
