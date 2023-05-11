@@ -1,4 +1,4 @@
-
+// "strict mode"
 // ! javascript Objects...
 
 /** 
@@ -83,7 +83,7 @@ let props = Object.values(person);
 console.log(props);
 
 props.forEach((props) => {
-  console.log(`There are 3 ${person[props]} ${props}`);
+  console.log(`There are 3 ${person.props} ${props}`);
 });
 
 props.forEach((props) => console.log(props));
@@ -98,7 +98,15 @@ const myProfile = {
   origin: "Annang",
   age: 2023 - 2000,
   friends: ["Mecky", "Hero", "Joseph", "Marcus"],
+  birthYear: 2001,
+
+  calcAge: function () {
+      return 2023 - this.birthYear
+  }
 };
+
+console.log(myProfile.calcAge());
+// console.log(myProfile.calcAge);
 
 const nameKey = "Name";
 console.log(myProfile[nameKey]);
@@ -130,12 +138,11 @@ ${myProfile.friends[0]}. ${myProfile.friends[1]} is his best friend in the churc
 //! OBJECT METHODS  
 //* A JavaScript method is simply a function declared inside an object...
   
-myProfile.birthyear = 2001;
-console.log(myProfile);
+// myProfile.birthyear = 2001;
+// console.log(myProfile);
 
-myProfile.calcAge = (birthyear) => {
-  return 2023 - birthyear
-};
-//? You can not use function declarations in a method. Only function expressions work.
+// myProfile.calcAge = () => {
+//   return 2023 - this.birthyear
+// };
+//**  You can not use function declarations in a method. Only function expressions work.   
 
-console.log(myProfile.calcAge(2002))
