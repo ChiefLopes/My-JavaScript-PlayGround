@@ -108,23 +108,16 @@ const myProfile = {
 
   calcAge: function () {
     return (dateOfBirth = 2023 - this.birthYear);
-        ;
-
   },
 
   getSummary: function () {
-   return `${this.firstName} is a ${this.calcAge()}-year old ${
-     this.job
-   } and he has ${
-     this.hasDriversLicense
-       ? "a"
-       : "no"
-   } driver's license`;
-  }
+    return `${this.firstName} is a ${this.calcAge()}-year old ${
+      this.job
+    } and he has ${this.hasDriversLicense ? "a" : "no"} driver's license`;
+  },
 };
 
 console.log(myProfile.calcAge());
-
 
 // if (myProfile.hasDriversLicense == true) {
 //   myProfile.hasDriversLicense = "has a driver's license"
@@ -135,10 +128,8 @@ console.log(myProfile.calcAge());
 // myProfile.hasDriversLicense = true
 //   ? "has a driver's license"
 //   : "has no driver's license";
- 
-console.log(
-  myProfile.getSummary()
-);
+
+console.log(myProfile.getSummary());
 
 // console.log(myProfile.calcAge());
 // console.log(myProfile.calcAge);
@@ -148,17 +139,13 @@ const nameKey = "Name";
 console.log(myProfile["first" + nameKey]);
 console.log(myProfile["last" + nameKey]);
 
-
 myProfile.location = "Uyo";
 myProfile["twitter"] = "@Chieflopes";
-
 
 // const askMe = prompt(
 //   "what do you want to know about Lopes? firstName, lastName, skin, age, origin, location friends or job"
 // );
 // console.log(myProfile[askMe]);
-
-
 
 // if (myProfile[askMe]) {
 //   console.log(myProfile[askMe]);
@@ -171,16 +158,39 @@ myProfile["twitter"] = "@Chieflopes";
 console.log(`${myProfile.firstName} has ${myProfile.friends.length} friends and his girlfriend's is 
 ${myProfile.friends[0]}. ${myProfile.friends[1]} is his best friend in the church while ${myProfile.friends[2]} is his coding paddy and ${myProfile.friends[3]} is his street paddy`);
 
-//! OBJECT METHODS  
+//! OBJECT METHODS
 //* A JavaScript method is simply a function declared inside an object...
-  
+
 // myProfile.birthyear = 2001;
 // console.log(myProfile);
 
 // myProfile.calcAge = () => {
 //   return 2023 - this.birthyear
 // };
-//**  You can not use function declarations in a method. Only function expressions work.   
+//**  You can not use function declarations in a method. Only function expressions work.
 
-//!? Resolved a conflict by manually deleting got.lock file from my project directory.
+//!? Resolved a conflict by manually deleting git.lock file from my project directory.
 
+//! CODING CHALLENGE
+const johnProfile = {
+  firstName: "John",
+  lastName: "Smith",
+  massOfJohn: 92,
+  heightOfJohn: 1.95,
+
+  calcBMI: function () {
+    return this.BMI = this.massOfJohn / this.heightOfJohn;
+  },  
+
+
+};
+
+console.log(johnProfile.BMI);
+
+
+const markProfile = {
+  firstName: "Mark",
+  lastName: "Miller",
+  massOfMark: 78,
+  heightOfMark: 1.69,
+};
