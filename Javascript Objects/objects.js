@@ -193,4 +193,11 @@ const markProfile = {
   lastName: "Miller",
   massOfMark: 78,
   heightOfMark: 1.69,
+
+  calcBMI: function () {
+    this.BMI = this.massOfMark / this.heightOfHeight;
+    return this.BMI;
+  },
 };
+
+console.log(markProfile.BMI);
