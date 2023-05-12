@@ -193,8 +193,12 @@ const markProfile = {
   heightOfMark: 1.69,
 
   calcBMI: function () {
-    return (this.markBMI = Math.ceil(this.massOfMark / (this.heightOfMark * 2)));
+    return (this.markBMI = (this.massOfMark / (this.heightOfMark *2)));
   },
 };
 
+
+
 console.log(markProfile.calcBMI());
+
+//** Compsrison */
