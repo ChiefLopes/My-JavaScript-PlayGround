@@ -102,8 +102,9 @@ const myProfile = {
   hasDriversLicense: false,
 
   // calcAge: function () {
-  //   console.log(this);
-  //     return 2023 - this.age
+  //   // console.log(this);
+  //   this.age = 2023 - this.birthYear
+  //     return this.age
   // }
 
   calcAge: function () {
@@ -116,7 +117,7 @@ const myProfile = {
     } and he has ${this.hasDriversLicense ? "a" : "no"} driver's license`;
   },
 };
-
+console.log(myProfile.age);
 console.log(myProfile.calcAge());
 
 // if (myProfile.hasDriversLicense == true) {
@@ -173,32 +174,62 @@ ${myProfile.friends[0]}. ${myProfile.friends[1]} is his best friend in the churc
 
 //! CODING CHALLENGE
 const johnProfile = {
-  firstName: "John",
-  lastName: "Smith",
+  fullName: "John Smith",
   massOfJohn: 92,
   heightOfJohn: 1.95,
 
- calcBMI: function () {
-   return (this.johnBMI = this.massOfJohn / (this.heightOfJohn*2));
+  calcBMIJohn: function () {
+    return (this.johnBMI = this.massOfJohn / (this.heightOfJohn ** 2));
   },
 };
 
-console.log(johnProfile.calcBMI());
-
+console.log(johnProfile.calcBMIJohn());
 
 const markProfile = {
-  firstName: "Mark",
-  lastName: "Miller",
+  fullName: "Mark Miller",
   massOfMark: 78,
   heightOfMark: 1.69,
 
-  calcBMI: function () {
-    return (this.markBMI = (this.massOfMark / (this.heightOfMark *2)));
+  calcBMIMark: function () {
+    return (this.markBMI = this.massOfMark / (this.heightOfMark ** 2));
   },
 };
 
+// console.log(markProfile.calcBMIMark());
+markProfile.calcBMIMark();  //! without calling this method, the next code @line200 wouldn't be available...
+console.log(  markProfile.markBMI);
 
+/** Comparison */
+// if (johnProfile.calcBMIJohn() > markProfile.calcBMIMark()) {
+//   console.log(
+//     `${
+//       johnProfile.johnFullName
+//     }'s BMI of ${johnProfile.calcBMIJohn()} is higher than ${
+//       markProfile.markFullName
+//     }'s BMI of ${markProfile.calcBMIMark()}`
+//   );
+// } else {
+//   console.log(
+//     `${
+//       markProfile.markFullName
+//     }'s BMI of ${markProfile.calcBMIMark()} is higher than ${
+//       johnProfile.johnFullName
+//     }'s BMI of ${johnProfile.calcBMIJohn()}`
+//   );
+// }
 
-console.log(markProfile.calcBMI());
-
-//** Compsrison */
+johnProfile.calcBMIJohn() > markProfile.calcBMIMark()
+  ? console.log(
+      `${
+        johnProfile.fullName
+      }'s BMI of ${johnProfile.calcBMIJohn()} is higher than ${
+        markProfile.fullName
+      }'s BMI of ${markProfile.calcBMIMark()}`
+    )
+  : console.log(
+      `${
+        markProfile.fullName
+      }'s BMI of ${markProfile.calcBMIMark()} is higher than ${
+        johnProfile.fullName
+      }'s BMI of ${johnProfile.calcBMIJohn()}`
+    );
