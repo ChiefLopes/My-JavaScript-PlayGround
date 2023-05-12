@@ -178,11 +178,10 @@ const johnProfile = {
   massOfJohn: 92,
   heightOfJohn: 1.95,
 
-  calcBMI: function () {
-    return this.BMI = this.massOfJohn / this.heightOfJohn;
-  },  
-
-
+ calcBMI: function () {
+    this.BMI = this.massOfJohn / this.heightOfJohn;
+    return this.BMI;
+  },
 };
 
 console.log(johnProfile.BMI);
@@ -195,7 +194,7 @@ const markProfile = {
   heightOfMark: 1.69,
 
   calcBMI: function () {
-    this.BMI = this.massOfMark / this.heightOfHeight;
+    this.BMI = this.massOfMark / this.heightOfMark;
     return this.BMI;
   },
 };
