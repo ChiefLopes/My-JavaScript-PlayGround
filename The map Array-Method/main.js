@@ -11,5 +11,9 @@ let people = [
     { name: "Robert", age: 58, job: "Developer" },
 ];
 
-const peoplename = people.map(name => name.name)
+
+// mapping thru to give names and ages of people in the array
+const peoplename = people.map(person => `${person.name} is ${person.age} years old`)
 console.log(peoplename);
+
+
