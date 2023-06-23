@@ -13,7 +13,22 @@ let people = [
 
 
 // mapping thru to give names and ages of people in the array
-const peoplename = people.map(person => `${person.name} is ${person.age} years old`)
+const peoplename = people.map(person => `${person.name} is a ${person.job}`
+)
 console.log(peoplename);
 
+// peopleNameJob = people.map(person => ({
+//     name: person.name
+// }))
+    
+// console.log(peopleNameAndJobs);
+
+const peopleNameAndJobs = people.map(person => `${person.name} is `)
+
+// mapping thru to give names and ages of people under 20
+const nameAge = people.map(person => `${person.name} is ${person.age} years old`)
+console.log(nameAge);
+
+const name$age = people.map(person => ({ name: person.name, age: person.age }))
+console.log(name$age);
 
