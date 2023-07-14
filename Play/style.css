@@ -1,0 +1,23 @@
+* {
+  background: rgb(49, 107, 47);
+}
+
+.container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 180px;
+  width: 180px;
+  background: rgb(39, 165, 159);
+  border-radius: 50%;
+  margin: 200px auto;
+}
+
+.container::before {
+  content: " ";
+  height: 180px;
+  width: 180px;
+  background: rgb(39, 165, 39);
+  border-radius: 50%;
+  margin: 200px auto;
+}
